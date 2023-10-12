@@ -1,33 +1,43 @@
 // functions-test.js
 
 var assert = require('chai').assert;
+// brings in the Chai library
 var addTwoNumbers = require('./functions.js').addTwoNumbers;
-var sayHello = require('./functions.js').sayHello;
-var buildCar = require('./functions.js').buildCar;
+// importing the functionality from another file.
 
+var sayHello = require('./functions.js').sayHello;
+
+var buildCar = require('./functions.js').buildCar;
+// variables
 describe('functions', function () {
   describe('addTwoNumbers', function () {
-    it.skip('should be able to add zero to zero', function () {
+    it('should be able to add zero to zero', function () {
       // setup for test (if necessary)
 
       // execute function
       var sum = addTwoNumbers(0, 0)
+      // assert what the result should be
+      //equals is for compariting primitaive data types
+      // sum === 0
+
+
+
 
       // assert what the result SHOULD be
       assert.equal(sum, 0)
     })
 
-    it.skip('should be able to add 1 to 0', function () {
+    it('should be able to add 1 to 0', function () {
       assert.equal(addTwoNumbers(1, 0), 1)
     })
 
-    it.skip('should be able to add 1 to 1', function () {
+    it('should be able to add 1 to 1', function () {
       assert.equal(addTwoNumbers(1, 1), 2)
     })
   })
 
   describe('sayHello', function () {
-    it.skip('should be able to say hello to Leta', function () {
+    it('should be able to say hello to Leta', function () {
       // setup for test (if necessary)
 
       // execute function
