@@ -47,11 +47,11 @@ describe('functions', function () {
       assert.equal(greeting, 'Hi there Leta!')
     })
 
-    it.skip('should be able to say hello to Casey', function () {
+    it('should be able to say hello to Casey', function () {
       assert.equal(sayHello('Casey'), 'Hi there Casey!')
     })
 
-    it.skip('should not be able to say hello to Will', function () {
+    it('should not be able to say hello to Will', function () {
       var differentMessage = sayHello('Will')
 
       assert.equal(differentMessage, 'No more testing Will!')
@@ -59,24 +59,25 @@ describe('functions', function () {
   })
 
   describe('buildCar', function () {
-    it.skip('should return a car with a color', function () {
+    it('should return a car with a color', function () {
       // setup for test (if necessary)
       var color = 'red'
 
       // execute function
-      var carDetails = buildCar(color)
+    
+      var carDetails = buildCar(color);
 
       // assert what the result SHOULD be
       assert.equal(carDetails.color, color)
     })
 
-    it.skip('should return a car with a type', function () {
+    it('should return a car with a type', function () {
       var carInfo = buildCar('red', 'truck')
 
       assert.equal(carInfo.type, 'truck')
     })
 
-    it.skip('should return an empty object if there are no details passed', function () {
+    it('should return an empty object if there are no details passed', function () {
       assert.deepEqual(buildCar(), {})
     })
   })

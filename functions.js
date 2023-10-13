@@ -6,13 +6,27 @@ var num2;
     return sum 
 }
 
-function sayHello() {
-var greetin = undefined;
-    
-        console.log(`Hi there ${greetin}!`);
-    
+function sayHello(name) {
+if (name === `Will`)
+{
+    return `No more testing Will!`
+} else {
+    return `Hi there ${name}!`
 }
-function buildCar(){
+}
+function buildCar(color,type){
+    var carDetails = {
+        color: color,
+        type: type,
+} 
+if (color === undefined && type === undefined){
+    return {};
+}
+    else {
+    
+    return carDetails;
+}
+
 
 }
 //  allows of to export funcitons to another file
